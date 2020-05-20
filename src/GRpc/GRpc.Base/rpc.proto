@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package GRpc.Base;
+
+service IRpcService {
+  
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+
+  rpc GetStreamContent (StreamRequest) returns (stream StreamContent) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
+
+message StreamRequest {
+  string fileName = 1;
+}
+
+message StreamContent {
+  bytes content = 1;
+}
