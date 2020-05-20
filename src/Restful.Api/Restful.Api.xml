@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Restful.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Restful.Api.Controllers.V1.CompaniesController.GetCompanies">
+            <summary>
+            获取公司列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Restful.Api.Controllers.V2.CompaniesController.GetCompanies">
+            <summary>
+            获取公司列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Restful.Api.Entities.Company.Id">
+            <summary>
+            公司Id
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Company.Name">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Company.Introduction">
+            <summary>
+            公司介绍
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Company.Employees">
+            <summary>
+            公司员工
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Employee.Id">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Employee.CompanyId">
+            <summary>
+            员工所属公司Id
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Employee.EmployeeNo">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Employee.FirstName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Employee.Gender">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Employee.DateOfBirth">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="P:Restful.Api.Entities.Employee.Company">
+            <summary>
+            所属公司
+            </summary>
+        </member>
+        <member name="F:Restful.Api.Entities.Gender.Male">
+            <summary>
+            男性
+            </summary>
+        </member>
+        <member name="F:Restful.Api.Entities.Gender.Female">
+            <summary>
+            女性
+            </summary>
+        </member>
+    </members>
+</doc>
