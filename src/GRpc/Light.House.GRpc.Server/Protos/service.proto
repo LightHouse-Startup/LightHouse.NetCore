@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "message.proto";
+
+option csharp_namespace = "Light.House.GRpc.Server.Protos";
+
+service EmployeeService{
+    //根据ID获取员工（一元消息）
+    rpc GetEmployeeById(GetEmployeeByIdRequest) returns (EmployeeResponse);
+
+    //上传员工信息（一元消息）
+    rpc SaveEmployee(EmployeeRequest) returns (EmployeeResponse);
+
+    //根据条件获取全部员工（服务端流）
+    rpc GetEmployeeCollection(GetEmployeeCollectionRequest) returns (stream GetEmployeeCollectionReponse);
+
+    //员工上传照片（客户端流）
+    rpc AddPhoto(stream AddPhotoRequest) returns (AddPhotoReponse);
+
+    //（双向流）
+    rpc SaveEmployees(stream EmployeeRequest) returns (stream EmployeeResponse);
+}
